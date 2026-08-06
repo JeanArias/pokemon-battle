@@ -1,6 +1,7 @@
 from pokemon import Pokemon
 
 class Pikachu(Pokemon):
+    
     def __init__(self):
         super().__init__(
             "Pikachu", 

@@ -2,8 +2,8 @@ import random
 
 def aplicar_evento(atacante,defensor):
 
-    evento = random.randint(1,5)
-    pokemon = random.choice("atacante","defensor")
+    evento = random.randint(1,4)
+    pokemon = random.choice([atacante,defensor])
 
     if evento == 1:
         print("\n Evento: Encontro una baya")
@@ -15,11 +15,11 @@ def aplicar_evento(atacante,defensor):
         return "critico"
 
     elif evento == 3:
-        print(f"\n Evento: El {pokemon} se quedo dormido")
+        print(f"\n Evento: El {pokemon.nombre} se quedo dormido")
         return "dormido"
 
     else: 
-        print(f"\n Evento: El {pokemon} ha fallado")
+        print(f"\n Evento: El {pokemon.nombre} ha fallado")
         return "fallado"
         
         

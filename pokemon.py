@@ -5,7 +5,7 @@ class Pokemon:
     def __init__(self,nombre,tipo,vida,ataque,defensa,velocidad):
         self.nombre = nombre
         self.tipo = tipo
-        self.vida = vida
+        self.__vida = vida
         self.ataque =ataque
         self.defensa =defensa
         self.velocidad = velocidad
@@ -16,7 +16,7 @@ class Pokemon:
     def mostrar_estado(self):
         print(f"\n{self.nombre}")
         print(f"Tipo: {self.tipo}")
-        print(f"Vida: {self.vida}")
+        print(f"Vida: {self.__vida}")
         print(f"Ataque: {self.ataque}")
         print(f"Defensa: {self.defensa}")
         print(f"Velocidad: {self.velocidad}")

@@ -62,9 +62,11 @@ class Batalla:
         if self.pokemon1.velocidad >= self.pokemon2.velocidad:
             primero = self.pokemon1
             segundo = self.pokemon2
+           
         else:
             primero = self.pokemon2
             segundo = self.pokemon1
+           
 
         ronda = 1
 
@@ -76,9 +78,14 @@ class Batalla:
 
             self.ejecutar_turno(primero,segundo)
 
-            if not primero.esta_vivo() or not segundo.esta_vivo():
+            if not segundo.esta_vivo() :
                 break
 
+            self.ejecutar_turno(segundo,primero)
+
+            if not primero.esta_vivo() :
+                break
+            
             ronda += 1
 
         print("="*40)
