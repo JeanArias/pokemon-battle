@@ -10,6 +10,10 @@ class Charmander(Pokemon):
               24, 
               10, 
               15)
+        self.imagen = (
+            "https://img.pokemondb.net/"
+            "sprites/red-blue/normal/charmander.png"
+        )
 
     def atacar(self):
         print("Charmander usa Lanzallamas")

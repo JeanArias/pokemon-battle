@@ -11,6 +11,10 @@ class Pikachu(Pokemon):
             8, 
             18
             )
+        self.imagen = (
+            "https://img.pokemondb.net/"
+            "sprites/red-blue/normal/pikachu.png"
+        )
 
     def atacar(self):
         print("Pikachu usa Impactrueno")
