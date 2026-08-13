@@ -7,10 +7,10 @@ class Ninetales(Pokemon):
         super().__init__(
             "Ninetales", 
             "Fuego", 
-            73, 
-            76, 
-            75, 
-            100
+            256, 
+            141, 
+            139, 
+            184
             )
         self.imagen = (
             "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"
@@ -18,4 +18,4 @@ class Ninetales(Pokemon):
 
     def atacar(self):
         print("¡Ninetales usa Lanzallamas!")
-        return super().atacar() + 10
+        return super().atacar() + 25

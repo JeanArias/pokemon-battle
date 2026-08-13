@@ -23,7 +23,7 @@ def aplicar_evento(atacante,defensor):
         return "fallado"
         
 #esto es nuevoooo
-#         
+       
 
 def aplicar_evento_detallado(atacante, defensor):
     """Version estructurada para la interfaz grafica.

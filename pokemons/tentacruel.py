@@ -1,18 +1,19 @@
 from pokemon import Pokemon
 
 class Tentacruel(Pokemon):
-    def __init__(self, nombre, tipo, vida, ataque, defensa, velocidad):
+    def __init__(self):
         super().__init__(
             "Tentacruel",
             "Water/Poison",
-            80,
-            70,
-            65,
-            100)
+            270,
+            130,
+            121,
+            148)
+
         self.imagen = (
-            "https://img.pokemondb.net/artwork/tentacruel.jpg"
-        )
-        
+                           "https://img.pokemondb.net/sprites/red-blue/normal/tentacruel.png"
+                        )
+    
     def atacar(self):
         print("Tentacruel usa tentaculos")
         return super().atacar()+10
