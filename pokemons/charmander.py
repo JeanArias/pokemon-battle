@@ -6,15 +6,16 @@ class Charmander(Pokemon):
         super().__init__(
             "Charmander",
              "Fuego",
-              110, 
-              24, 
-              10, 
-              15)
+              188, 
+              95, 
+              81, 
+              121)
+
         self.imagen = (
             "https://img.pokemondb.net/"
             "sprites/red-blue/normal/charmander.png"
         )
 
     def atacar(self):
-        print("Charmander usa Lanzallamas")
-        return super().atacar()+10
+        print("Charmander usa Colmillo de fuego")
+        return super().atacar()+13

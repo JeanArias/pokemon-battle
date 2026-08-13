@@ -6,10 +6,10 @@ class Pikachu(Pokemon):
         super().__init__(
             "Pikachu", 
             "Electrico", 
-            100, 
-            25, 
-            8, 
-            18
+            180, 
+            103, 
+            76, 
+            166
             )
         self.imagen = (
             "https://img.pokemondb.net/"
@@ -17,5 +17,5 @@ class Pikachu(Pokemon):
         )
 
     def atacar(self):
-        print("Pikachu usa Impactrueno")
-        return super().atacar()+8
+        print("Pikachu usa Chispa")
+        return super().atacar()+10
