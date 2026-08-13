@@ -11,6 +11,11 @@ class Charmander(Pokemon):
               81, 
               121)
 
+        self.imagen = (
+            "https://img.pokemondb.net/"
+            "sprites/red-blue/normal/charmander.png"
+        )
+
     def atacar(self):
         print("Charmander usa Colmillo de fuego")
         return super().atacar()+13
