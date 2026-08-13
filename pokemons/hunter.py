@@ -14,3 +14,4 @@ class Hunter(Pokemon):
     def atacar(self):
         print("Hunter usa Garra siniestra")
         return super().atacar()+20
+    
